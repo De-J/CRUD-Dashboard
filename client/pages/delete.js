@@ -17,7 +17,7 @@ export default function Delete() {
   return(
     <form 
       onSubmit={handleSubmit} 
-      className="flex justify-center item-center bg-gray-500">
+      className="ml-16 flex justify-center item-center bg-gray-500">
       <input
         className="p-3 my-2.5 mx-1 rounded-md"
         type="text" 

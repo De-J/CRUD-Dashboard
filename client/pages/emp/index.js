@@ -2,14 +2,13 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 
 import { useState } from 'react';
-import UserCard from "../components/UserCard"
-import newRequest from '../utils/newRequest';
+import UserCard from "../../components/UserCard"
+import newRequest from '../../utils/newRequest';
 import { useQuery } from "@tanstack/react-query";
 
 // const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(false);
   
   const empQuery = useQuery({
     queryKey: ["employeeRecords"],
