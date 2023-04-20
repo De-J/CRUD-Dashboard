@@ -1,7 +1,7 @@
 import { BsPlus, BsGearFill } from 'react-icons/bs';
 import { MdDelete } from 'react-icons/md';
 import { FaUserEdit, FaUserFriends } from 'react-icons/fa';
-import SidebarIcon from './SidebarIcon';
+import SidebarIcon from './sidebarIcon';
 
 export default function Sidebar() {
   return(

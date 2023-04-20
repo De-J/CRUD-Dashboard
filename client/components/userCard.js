@@ -2,9 +2,7 @@ import Link from 'next/link'
 
 export default function UserCard(props) {
   const { fname, lname, status, dept } = props;
-
   const fullname = `/emp/${fname} ${lname}`;
-  console.log(fullname)
   return (
     <Link href={fullname}>
       <div className="w-64 flex border-2 border-[#a6b1e1] rounded-xl cursor-pointer font-roboto">
