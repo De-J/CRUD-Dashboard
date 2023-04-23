@@ -1,5 +1,6 @@
 import express from "express";
 import {
+    findEmp,
     getEmp,
     createEmp,
     updateEmp,
@@ -7,6 +8,8 @@ import {
 } from "../controllers/employee.controller.js";
 
 const router = express.Router();
+
+router.get("/chart", findEmp);
 
 router.get("/get", getEmp);
 router.post("/add", createEmp);

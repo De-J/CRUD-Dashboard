@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 export default function UserCard(props) {
-  const { fname, lname, status, dept } = props;
+  const { fname, lname, status, dept, img_url } = props;
   const fullname = `/emp/${fname} ${lname}`;
   return (
     <Link href={fullname}>
@@ -9,14 +9,14 @@ export default function UserCard(props) {
         <div>
           <img
             className="h-[10vh] w-[10vh] m-[2vh] rounded-[50%] border-2 border-[#dcd6f7]"
-            src="https://plus.unsplash.com/premium_photo-1676654935493-10ee2b4f2a25?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" />
+            src={img_url} />
         </div>
 
         <div className="flex flex-col justify-center">
           <div>{fname} {lname}</div>
           <div className="flex justify-center align-middle">
             <div className="m-1">{dept}</div>
-            <div className="m-1 py-0.5 bg-[#eed180] font-rajdhani">{status}</div>
+            <div className="m-1 py-0.5 bg-[#eed180] font-rajdhani">{status.toUpperCase()}</div>
           </div>
         </div>
       </div>

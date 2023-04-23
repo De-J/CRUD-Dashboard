@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&family=Roboto+Mono&display=swap');
+/* should come before tailwind definitions */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani&family=Roboto+Mono&display=swap');
 
 @layer components {
     .sidebar-icon {

@@ -1,9 +1,8 @@
 import express from "express";
 import mongoose from "mongoose";
-import dotenv from "dotenv";
 import cors from "cors";
 import bodyParser from "body-parser";
-
+import dotenv from "dotenv";
 import employeeRoute from "./routes/employee.route.js";
 
 dotenv.config();
@@ -13,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(cors(
     {
-        origin: "http://localhost:3000", 
+        origin: ["http://localhost:3000"], 
         credentials: true
     },
     { withCredentials: true }

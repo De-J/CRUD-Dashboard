@@ -21,8 +21,8 @@ module.exports = {
       },
     },
     fontFamily: {
-      rajdhani: ['Rajdhani', 'sans-serif'],
-      roboto: ["Roboto Mono", 'monospace']
+      roboto: ["Roboto Mono", "serif"],
+      rajdhani: ["Rajdhani", "sans-serif"]
     },
   },
   plugins: [],

@@ -1,5 +1,5 @@
 import '@/styles/globals.css'
-import Sidebar from '../components/Sidebar'
+import Sidebar from '../components/sidebar'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 const queryClient = new QueryClient();

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import DropdownList from '../components/DropdownList';
-import FormInput from "../components/FormInput";
+import DropdownList from '../components/dropdownList';
+import FormInput from "../components/formInput";
 import newRequest from '../utils/newRequest';
 
 const inputs = [
